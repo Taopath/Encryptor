@@ -3,6 +3,7 @@ import sys
 import struct
 import getpass
 from Crypto.Cipher import AES
+from Crypto.Hash import SHA256
 from Crypto.Protocol.KDF import PBKDF2
 from Crypto.Random import get_random_bytes
 
@@ -18,13 +19,6 @@ def check_file_exists(file_path):
         os.system('clear')
         terminate_with_message('file does not exist, terminating.')
         sys.exit()
-
-import os
-import struct
-from Crypto.Cipher import AES
-from Crypto.Protocol.KDF import PBKDF2
-from Crypto.Random import get_random_bytes
-from Crypto.Hash import SHA256
 
 def encrypt_file(input_file, output_file, password):
     salt = get_random_bytes(16)
