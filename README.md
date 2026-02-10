@@ -7,7 +7,7 @@
 <p>Either directly run the python file using:</p>
 <code>python encryptor.py</code>
 <br></br>
-<p>Or use two prowided flags for decryption and encryption:</p>
+<p>Or use two provided flags for decryption and encryption:</p>
 
 <p>Encrypt file:</p>
 <code>python encryptor.py -ef</code>
